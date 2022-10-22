@@ -5,7 +5,7 @@ class Handler(FileSystemEventHandler):
     def on_created(self, event):
         filename : str = event.src_path.replace("E:\Колледж\Python\PR2", "").replace(".txt", "").lower()
         for char in filename:
-            if char in "sdf":
+            if char in "sdfnvvv":
                 print(char)
             else:
                 print(char.upper())
